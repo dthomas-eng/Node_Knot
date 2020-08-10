@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Node Knot</title>
+</head>
+<body>
+
+	<div class="welcome" id ="welcome">
+		<textarea class="logotxt" id="logotxt" readonly>Node Knot</textarea>
+		<textarea class="initialstxt" id="initialstxt" readonly>Enter your initials:</textarea>
+		<input type="text" class="initials" id="initials" value="???" onfocus="this.value=''"></input>
+		<button class="playbtn" id="playbtn" onclick="playbtn()">Play</button>
+		<button class="createbtn" id="createbtn" onclick="createbtn()">Create</button>
+	</div>
+
+	<div class="topbar" id="topbar">
+		<span class ="timer" id="timer" >00:00</span>
+		<span class ="distance" id="distance">0</span>
+		<button class="submitbtn" id="submitbtn" onclick="submitbtn()">Submit</button>
+		<button class="clearbtn" id="clearbtn" onclick="clearbtn()">Clear</button>
+	</div>
+
+	<span class="playinstruction1" id="playinstruction1">Drag this node so that no lines intersect!</span>
+	<span class="playinstruction2" id="playinstruction2">Same deal, but more nodes. To score high, move quickly and choose efficient paths!</span>
+	<span class="createinstruction1" id="createinstruction1">Welcome to create mode! Here, you can create puzzles that will show up in play mode. Drag to draw lines!</span>
+	<span class="creator" id="creator">Puzzle Creator: ???</span>
+
+	<div class="results" id="results">
+		<textarea class="resultstxt" id="resultstxt" readonly></textarea>
+		<textarea class="fastesttxt" id="fastesttxt" readonly></textarea>
+		<textarea class="shortesttxt" id="shortesttxt" readonly></textarea>
+		<button class="nextbtn" id="nextbtn" onclick="nextbtn()">Next</button>
+		<button class="retrybtn" id="retrybtn" onclick="retrybtn()">Retry</button>
+	</div>
+
+	<canvas class="canvas" id="canvas"></canvas>
+
+	<!--This download/load feature is for development only-. Kept out of iframe.-->
+	<!--input type='file'; id='fileinput' class='file'></input>
+	<span class ="download" id="download" onclick="download()">download</span-->
+
+	<script src = "Node_Knot.js"></script>
+</body>
+</html>
