@@ -1,2 +1,2 @@
 # Node_Knot
-The source code Node Knot, the game. 
+The source code for Node Knot, the game. 
