@@ -1,4 +1,4 @@
-/*Hello and thaks for taking a look at the source code for Node Knot!
+/*Hello and thanks for taking a look at the source code for Node Knot!
 
 You can play this game right now at dthomas.io/NodeKnot.html
 
